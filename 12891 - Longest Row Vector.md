@@ -29,7 +29,7 @@ Output the longest vector of matrix, if there are over one vectors have the same
 
 Use double array (or vector) to store the input, and then in next $k$ lines just implement `switch(i, j)` & `add(i, j)`.
 **switch** :
-```cpp=
+```c++
 if(operation == 0) {    //switch.
             int a, b;
             cin >> a >> b;
@@ -38,7 +38,7 @@ if(operation == 0) {    //switch.
         }
 ```
 **Add** :
-```cpp=
+```c++
 if(operation == 1) {    //add.
             int a, b;
             cin >> a >> b;
@@ -47,7 +47,7 @@ if(operation == 1) {    //add.
         }
 ```
 After $k$ operations then we have to count the length and find the index of the longest vector, so we have the function `ansidx` to find the idx.
-```cpp=
+```c++
 int ansidx(const int& m, const int& n) {
     int maxlen = INT16_MIN, idx;
     for(int i = 0; i < m; i++) {
@@ -67,7 +67,7 @@ Then we can output what we need in the end.
 ---
 
 ### Code
-```cpp=
+```c++
 #include <iostream>
 #include <vector>
 #include <cmath>
