@@ -16,8 +16,8 @@ There are few restriction:
 
 #### Input
 
-First line is an integer $Q$, means there are $Q$ boards need to decide.
-And then next $Q\times15$ lines are the each boards, which '.' means empty, 'b' means black stone, 'w' means white stone.
+First line is an integer Q, means there are Q boards need to decide.
+And then next Q * 15 lines are the each boards, which '.' means empty, 'b' means black stone, 'w' means white stone.
 
 ----
 
@@ -32,7 +32,7 @@ But if there is no winner , output is 'none'.(All with endline).
 
 First read the board in the char double array.
 And also record the non-empty place in two sets, black and white.
-```cpp=
+```c++
 for(int i = 0; i < SIZE; i++) {
             for(int j = 0; j < SIZE; j++) {
                 cin >> Board[i][j];
@@ -45,7 +45,7 @@ for(int i = 0; i < SIZE; i++) {
 ```
 
 Then test the place if there are 5 or more stones in a row by `test_w`
-```cpp=
+```c++
 bool test_w(const int& x, const int& y) {
     for(int i = 0; i < 8; i++) {
         int new_x = x + dx[i];
@@ -73,7 +73,7 @@ So we can use the `test_w` function to find the winner.
 
 ### Code
 
-```cpp=
+```c++
 #include <iostream>
 #include <set>
 #define SIZE 15
