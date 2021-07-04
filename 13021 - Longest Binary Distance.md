@@ -6,7 +6,7 @@
 
 ### Description
 
-Binary distance for an integer is the number of "0" between two adjoining "1"s in the binary representation of an integer. For example, 37 in binary is 100101 so 37 has two binary distance is 2 and 1. If there are not any $0$ between two 1s , the distane would be 0.
+Binary distance for an integer is the number of "0" between two adjoining "1"s in the binary representation of an integer. For example, 37 in binary is 100101 so 37 has two binary distance is 2 and 1. If there are not any $0$ between two 1s , the distane would be 0.  
 Moreover, if the number of 1 is less than 2, the binary distance is -1.(e.g. 8 in binary is 100, so the distance is -1).
 
 ----
@@ -23,11 +23,10 @@ The longest binary distance of every integers.(with endline)
 
 ### Thoughts 
 
-Since we want to count the binary distance, we need to change decimal into binarry.
-
+Since we want to count the binary distance, we need to change decimal into binarry.  
 **Note : The 0 at right most can't count since there is no 1 at the right.**
-So I use `count` to count the distance, and also count the number of $1$ in case it is less than in the end.
-And *is_one_appear* is to avoid the issue that 0 is at the right most
+So I use `count` to count the distance, and also count the number of $1$ in case it is less than in the end.  
+And *is_one_appear* is to avoid the issue that 0 is at the right most.
 (Since the input might over 2^{32} - 1 , *long long* is needed.)
 ```c++
 void find_len(long long num) {
