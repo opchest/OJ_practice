@@ -6,16 +6,16 @@
 ### Description
 **Matrix** : A sequence of row vectors.
 **Length of vector** : <img src="https://render.githubusercontent.com/render/math?math=|v|=\sqrt\sumv_i^2"> 
-**Switch $(i, j)$** : swap $i$-row and $j$-row, denoted by $0$ in inputs.
-**Add $(i, j)$** : Add $j$-row to $i$-row, which means only $i$-row changes, denoted by $1$ in inputs.
+**Switch (i, j)** : swap i-row and j-row, denoted by 0 in inputs.
+**Add (i, j)** : Add j-row to $i$-row, which means only $i$-row changes, denoted by 1 in inputs.
 
 ----
 
 #### Input
 
-Three numbers $m, n, k$ in first line, means that there are $m$ rows of vectors which size are $n$.
-And in next $m$ lines  is the matrix.
-Then in next $k$ lines means the operation of above(switch, add).
+Three numbers m, n, k in first line, means that there are m rows of vectors which size are n.
+And in next m lines  is the matrix.
+Then in next k lines means the operation of above(switch, add).
 
 ----
 
