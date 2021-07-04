@@ -25,7 +25,7 @@ The longest binary distance of every integers.(with endline)
 
 Since we want to count the binary distance, we need to change decimal into binarry.  
 **Note : The 0 at right most can't count since there is no 1 at the right.**
-So I use `count` to count the distance, and also count the number of $1$ in case it is less than in the end.  
+So I use `count` to count the distance, and also count the number of 1 in case it is less than in the end.  
 And *is_one_appear* is to avoid the issue that 0 is at the right most.
 (Since the input might over 2^{32} - 1 , *long long* is needed.)
 ```c++
