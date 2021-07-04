@@ -27,7 +27,7 @@ Output the longest vector of matrix, if there are over one vectors have the same
 
 ### Thoughts & Implementation
 
-Use double array (or vector) to store the input, and then in next $k$ lines just implement `switch(i, j)` & `add(i, j)`.
+Use double array (or vector) to store the input, and then in next k lines just implement `switch(i, j)` & `add(i, j)`.
 **switch** :
 ```c++
 if(operation == 0) {    //switch.
