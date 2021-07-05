@@ -6,7 +6,7 @@
 
 ### Description
 
-Binary distance for an integer is the number of "0" between two adjoining "1"s in the binary representation of an integer. For example, 37 in binary is 100101 so 37 has two binary distance is 2 and 1. If there are not any $0$ between two 1s , the distane would be 0.  
+Binary distance for an integer is the number of "0" between two adjoining "1"s in the binary representation of an integer. For example, 37 in binary is 100101 so 37 has two binary distance is 2 and 1. If there are not any 0 between two 1s , the distane would be 0.  
 Moreover, if the number of 1 is less than 2, the binary distance is -1.(e.g. 8 in binary is 100, so the distance is -1).
 
 ----
